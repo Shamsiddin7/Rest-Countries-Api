@@ -6,6 +6,7 @@
     --dark: #111517;
     --grey: #848484;
     --bg-color: #FAFAFA;
+    --white: #FFF;
     --nunitosans: "NunitoSans";
 }
 
@@ -27,6 +28,11 @@ a{
     text-decoration: none;
 }
 
+body{
+    background-color: var(--bg-color);
+    font-family: var(--nunitosans);
+}
+
 /* CONTAINER */
 
 .container{
@@ -36,3 +42,28 @@ a{
     padding-left: 15px;
     padding-right: 15px;
 }
+
+/* SITE-HEADER */
+.site-header {
+    width: 100%;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    border-color: var(white);
+}
+.site-header__logo {
+    color: var(--dark);
+    font-size: 24px;
+    font-weight: 800;
+}
+.site-darkmode {
+    border: unset;
+    background-color: transparent;
+    color: var(--dark);
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+/* SITE-HEADER */
